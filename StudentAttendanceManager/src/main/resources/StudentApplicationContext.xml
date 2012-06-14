@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+
+	<context:annotation-config />
+
+	<!-- Add students to classroom here. -->
+	<bean id="studentList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<bean id="Chris" class="practice.mvc.domain.Student">
+					<property name="firstName" value="Chris" />
+					<property name="lastName" value="Zimmerman" />
+					<property name="present" value="false" />
+				</bean>
+				<bean id="Jack" class="practice.mvc.domain.Student">
+					<property name="firstName" value="Jack" />
+					<property name="lastName" value="Williams" />
+					<property name="present" value="false" />
+				</bean>
+				<bean id="Jeff" class="practice.mvc.domain.Student">
+					<property name="firstName" value="Jeff" />
+					<property name="lastName" value="Zill" />
+					<property name="present" value="false" />
+				</bean>
+				<bean id="Jerry" class="practice.mvc.domain.Student">
+					<property name="firstName" value="Jerry" />
+					<property name="lastName" value="Crooke" />
+					<property name="present" value="false" />
+				</bean>
+				<bean id="Tom" class="practice.mvc.domain.Student">
+					<property name="firstName" value="Tom" />
+					<property name="lastName" value="Quine" />
+					<property name="present" value="false" />
+				</bean>
+				<bean id="Kate" class="practice.mvc.domain.Student">
+					<property name="firstName" value="Kate" />
+					<property name="lastName" value="Harold" />
+					<property name="present" value="false" />
+				</bean>
+
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>
